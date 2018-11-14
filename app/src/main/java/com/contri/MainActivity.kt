@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 .setAction("Action", null).show()
 
             contriButton?.setOnClickListener {
-                var clickButton = Intent(this@MainActivity, ContriActivity :: class.java)
+                var clickButton = Intent(baseContext, ContriActivity :: class.java)
                 startActivity(clickButton)
             }
         }
