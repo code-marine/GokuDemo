@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical" android:layout_height="wrap_content">
+
+
+ <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/textView5"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/otp" />
+    <EditText
+            android:id="@+id/otp_et"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:singleLine="true"
+            android:textScaleX="1.5"
+            android:hint="XXXXXX"
+            android:maxLength="6"
+            android:layout_gravity="center|top"
+            android:inputType = "number"
+            android:letterSpacing="0.4"
+            android:textSize="28sp" />
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/btn_sub"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="#00468C"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="15dp"
+            app:cardCornerRadius="10dp">
+        <Button
+                android:id="@+id/btn_sub2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:fontFamily="serif"
+                android:padding="5dp"
+                android:textColor="#fff"/>
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
